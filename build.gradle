@@ -11,3 +11,8 @@ dependencies {
 
   testCompile 'junit:junit:4.12'
 }
+
+checkstyle {
+  configFile "$rootDir/checkstyle.xml" as File
+  toolVersion = '6.10.1'
+}
