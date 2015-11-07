@@ -1,4 +1,6 @@
 # java-shortuuid
+[![Build Status](https://travis-ci.org/hsingh/java-shortuuid.svg?branch=master)](https://travis-ci.org/hsingh/java-shortuuid)
+
 A generator library for concise, unambiguous and URL-safe UUIDs
 
 A Java library that generates concise, unambiguous, URL-safe UUIDs. Based on and compatible with the Python library [`shortuuid`](https://github.com/stochastic-technologies/shortuuid). Inspired by the Go [implementation](https://github.com/renstrom/shortuuid).
