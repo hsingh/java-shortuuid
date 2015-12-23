@@ -9,6 +9,21 @@ Often, one needs to use non-sequential IDs in places where users will see them, 
 
 ## Usage
 
+```
+public String shortUuid() {
+    ShortUuid.Builder builder = new ShortUuid.Builder();
+    ShortUuid shortUuid = builder.build(UUID.randomUUID());
+    
+    return shortUuid.toString();
+}
+
+public UUID getUuid(String shortUuid) {
+    ShortUuid.Builder builder = new ShortUuid.Builder();
+ 
+    return UUID.fromString(builder.decode(shortUuid));
+}
+```
+
 ## License
 
 MIT
